@@ -91,6 +91,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(webView)
 
         webView.settings.apply {
+            useWideViewPort = true
+            loadWithOverviewMode = true
+            textZoom = 100
             javaScriptEnabled = true
             domStorageEnabled = true
             databaseEnabled = true
